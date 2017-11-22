@@ -24,7 +24,10 @@ a{
     font-family: 微軟正黑體;
     font-weight: bold;
     letter-spacing: 10px;
-}
+    color: #636630    
+ }
+
+.p{color: #636630}
 
 .bg-light {
            background-color: #f8f9fa00!important;
@@ -47,7 +50,10 @@ a{
       top: 150%;
       left: 50%;
       transform: translate(-50%,-50%);
-                  background-color: rgba(255, 255, 255, 0.308)
+      background-color: rgba(255, 255, 255, 0.308);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
      }
 
 .card-left{
@@ -56,14 +62,58 @@ a{
 
 .card-left img{
                width: 100%;
+               height: 50vh;
               }
 
-.card-right{width: 60%;
+.card-right{
+            width: 60%;
             height: 400px;
+            margin: 10px;
            }
 
-.title{font-size: 24px;
+.title{
+       font-size: 24px;
        font-family: 微軟正黑體;
        font-weight: bold;
        letter-spacing: 10px;
       }
+
+.title_content{
+               font-family: 微軟正黑體;
+               letter-spacing: 10px;
+               margin: 10px auto;
+              }
+
+/*第三張大圖*/
+.big_picture_3{
+    background-image: url("/imgs/860_01.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.btns{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,120%);
+      display: inline-block;
+     }
+
+.btn-secondary{
+               margin: 10px;
+               color: #636630;
+               background-color: rgba(241, 241, 241, 0.603);
+               border-color: rgba(241, 241, 241, 0.603);
+              }
+
+
+.btn-botton{width: calc(100% - 40px);
+      height: 20px;
+      background-color: rgba(241, 241, 241, 0.699) ;
+      position: absolute;
+      top: 50%;
+      z-index: -1;
+      left: 20px;
+      transform: translateY(-50%);
+     }
