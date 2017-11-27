@@ -360,30 +360,31 @@ p{
              }
 
 .frame_left{
-    width: 40%;
-    height: 0vh;
-    position: relative;
-    left: 6%;
-
+    /* width: 45%; */
+    width: 70%;
+    /* height: 0vh; */
+    /* position: relative; */
+    /* left: 6%; */
+    float: left;
 }
 
-.frame_right{width: 25%;
-<<<<<<< HEAD
-             height: 55vh;
-             background-color: #1C2113;
-             border-radius: 20px;
-             position: relative;
-             left: 70%;
-             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
-=======
-            height: 55vh;
-            background-color: #1C2113;
-            border-radius: 20px;
-            position: relative;
-            left: 70%;
+.frame_right{
+    width: 25%;
+    height: 55vh;
+    background-color: #1C2113;
+    border-radius: 20px;
+    /* position: relative; */
+    /* left: 70%; */
+    float: left;
 
->>>>>>> 0e1528a0f7ce2a341ed01a91dee9988618107d80
-            }
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.clear{
+    clear: both;
+}
+textarea{
+    width:100%;
+}
 
 .frame_right1{font-size: 24px;
               font-family: 微軟正黑體;
