@@ -245,7 +245,8 @@
     <div class="big_picture_5">
         <div class="Table_title01" style="color:black">清香系列</div>
 
-        <div class="commodity" id="commodity01">
+
+        <div class="commodity" id="commodity01" data-aos="zoom-in-right" >
             <div class="Figure">
                 <img src="/imgs/tea01.png" style="width:100%;height:200px" alt="">
             </div>
@@ -255,7 +256,7 @@
             <div class="commodity_card">價格：600元</div>
         </div>
 
-        <div class="commodity" id="commodity02">
+        <div class="commodity" id="commodity02" data-aos="zoom-in">
             <div class="Figure">
                 <img src="/imgs/tea02.png" style="width:100%;height:200px" alt="">
             </div>
@@ -265,7 +266,7 @@
             <div class="commodity_card">價格：500元</div>
         </div>
 
-        <div class="commodity" id="commodity03">
+        <div class="commodity" id="commodity03" data-aos="zoom-in-left">
             <div class="Figure">
                 <img src="/imgs/tea01.png" style="width:100%;height:200px" alt="">
             </div>
@@ -277,7 +278,7 @@
 
         <div class="Table_title02" style="color:rgb(255, 255, 255)">炭焙系列</div>
 
-                <div class="commodity" id="commodity04">
+                <div class="commodity" id="commodity04" data-aos="zoom-out-right" >
                     <div class="Figure">
                         <img src="/imgs/tea01.png" style="width:100%;height:200px" alt="">
                     </div>
@@ -287,7 +288,7 @@
                     <div class="commodity_card">價格：800元</div>
                 </div>
                 
-                <div class="commodity" id="commodity05">
+                <div class="commodity" id="commodity05" data-aos="zoom-in-up">
                     <div class="Figure">
                         <img src="/imgs/tea02.png" style="width:100%;height:200px" alt="">
                     </div>
@@ -297,7 +298,7 @@
                     <div class="commodity_card">價格：650元</div>
                 </div>
                 
-                <div class="commodity" id="commodity06">
+                <div class="commodity" id="commodity06" data-aos="zoom-out-left">
                     <div class="Figure">
                         <img src="/imgs/tea01.png" style="width:100%;height:200px" alt="">
                     </div>
@@ -316,21 +317,44 @@
             <div class="title_content6">
                 我們非常重視您的意見，也很樂意解答您的問題，請提供以下資訊，幫助我們能儘速處理及回覆，謝謝您的配合，並祝您有個充實而愉快的茶飲生活 。
             </div>
+           
             <div class="frame_left">
-                <form action="/action_page.php">
-                <p>姓名：
+                <!-- <form action="/action_page.php">
+                <p>姓名：<br>
                     <input type="text" name="firstname" value="" size="53" required>
-                    <br>
-                <p>E-mail：
+                    
+                <p>E-mail：<br>
                     <input type="text" name="mail" value=""size="51" placeholder="name@example.com" >
-                <p>電話：
+                <p>電話：<br>
                     <input type="tel" name="usrtel" value="" size="53" placeholder="請提供手機或市話，若為市話，請提供完整區碼及分機。" required>
                 <p>內容：<br>
                     <textarea name="message" rows="4" cols="60" placeholder="請輸入含標點符號總字數3000字以內。"></textarea>
-                <br>
+                <br><br>
                     <button type="submit" class="btn btn-primary">送出</button>
+                </form>    -->
+
+                <div class="container">
+                 
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">姓名：</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">E-mail：</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">電話：</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                         <!-- 內容： -->
+                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                    
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
             </div>
-                 </form>
 
             <div class="frame_right">
                 <div class="frame_right1">公司資訊                     
@@ -344,6 +368,7 @@
                                             負責人：王嘉鴻<br>
                 </div>
             </div>
+
         </div>       
     </div>
 
