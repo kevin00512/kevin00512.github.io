@@ -1,6 +1,6 @@
-body{
+/* body{
      box-sizing: border-box;
-    }
+    } *
 
 /*第一張大圖*/
 .big_picture{
@@ -54,17 +54,17 @@ a{
      }
 
 .card-left{
+    float: left;
     width: 30%;         
 }
 
 .card-left img{
                width: 100%;
-               height: 50vh;
               }
 
 .card-right{
+            float: left;
             width: 60%;
-            height: 400px;
             margin: 10px;
            }
 

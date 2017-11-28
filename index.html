@@ -15,6 +15,29 @@
     <link rel="stylesheet" href="/css/swiper.min.css">
 
     <style>
+         @media screen and (max-width:769px){
+             .card{
+                 width: 100%;
+                 height: 100vh;
+                 left: 0%;
+                 top: 100%;
+                 border-radius: 0px;
+                 box-sizing: border-box;
+                }
+
+             .card-left{
+                 width: 100%;
+                 height: 20vh;
+                 float: left;
+                }     
+
+             .card-right{
+                 width: 100%;
+                 height: 70vh;
+                 float: left;
+                }
+
+         }
     </style>
 </head>
 
@@ -33,35 +56,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mt-1">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#big_picture_2">
                             <div class="p">品牌故事</div>
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#big_picture_3">
                             <div class="p">製茶流程</div>
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#big_picture_4">
                             <div class="p">最新消息</div>
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#big_picture_5">
                             <div class="p">商品資訊</div>
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="#big_picture_6">
                             <div class="p">聯絡我們</div>
                             <span class="sr-only">(current)</span>
                         </a>
@@ -75,9 +98,9 @@
     </div>
 
     <!--品牌故事-->
-    <div class="big_picture_2">
+    <div class="big_picture_2" id="big_picture_2">
         <div class="card" data-aos="zoom-in">
-            <div class="card-left">
+            <div class="card-left">                
                 <img src="/imgs/2934183736_8d11d14468_b.jpg" alt="">
             </div>
             <div class="card-right">
@@ -87,10 +110,11 @@
                 </div>
             </div>
         </div>
+        <div style="box-sizing: border-box"></div>
     </div>
 
     <!--製茶流程-->
-    <div class="big_picture_3">
+    <div class="big_picture_3" id="big_picture_3">
 
         <div class="tea_card active" id="tea1">
             <div class="tea_card-left">
@@ -220,7 +244,7 @@
     </div>
 
     <!--輪播圖-->
-    <div class="big_picture_4">
+    <div class="big_picture_4" id="big_picture_4">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -242,7 +266,7 @@
     </div>
 
     <!--商品專區-->
-    <div class="big_picture_5">
+    <div class="big_picture_5" id="big_picture_5">
         <div class="Table_title01" style="color:black">清香系列</div>
 
 
@@ -309,7 +333,7 @@
                     </div>
     </div>
     <!--聯絡我們-->
-    <div class="big_picture_6"> 
+    <div class="big_picture_6" id="big_picture_6"> 
         <div class="frame">            
             <div class="title6">
                 讓我們更好！                
@@ -337,21 +361,21 @@
                  
                     <form action="/action_page.php">
                         <div class="form-group">
-                            <label for="email">姓名：</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <label for="test">姓名：</label>
+                            <input type="test" class="form-control" id="test" placeholder="" name="test">
                         </div>
                         <div class="form-group">
-                            <label for="pwd">E-mail：</label>
-                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                            <label for="email">E-mail：</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
                         </div>
                         <div class="form-group">
-                            <label for="email">電話：</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <label for="tel">電話：</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="請提供手機或市話，若為市話，請提供完整區碼及分機。" name="tel">
                         </div>
-                         <!-- 內容： -->
-                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                         內容：
+                        <textarea name="message" id="" cols="30" rows="4" placeholder="請輸入含標點符號總字數3000字以內。"></textarea>
                     
-                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="submit" class="btn btn-default">送出</button>
                     </form>
                 </div>
             </div>
@@ -391,7 +415,9 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="js/swiper.min.js"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
 
+    <!-- 輪播圖 -->
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
@@ -410,6 +436,7 @@
         });
     </script>
 
+    <!-- 製茶流程事件判定 -->
     <script>
         function toggle_class(x) {
             //console.log(x);
@@ -421,7 +448,6 @@
             new_tea_card.classList.add('active');
         }
     </script>
-
 
 </body>
 
